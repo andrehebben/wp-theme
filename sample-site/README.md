@@ -14,4 +14,4 @@ This folder contains sample HTML pages that can be placed into WordPress as raw 
 - `resume.html` – Resume Highlights
 - `contact.html` – Contact
 
-Each file includes a basic HTML template suitable for the WordPress block editor.
+Each file includes a streamlined HTML template that aligns with 2025 design trends such as dark‑mode awareness, accessible typography and mobile‑first layout. Paste the snippets into Gutenberg blocks to build out the complete site.

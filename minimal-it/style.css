@@ -11,19 +11,38 @@ Text Domain: minimal-it
 Tags: blog, resume, contact, minimal, responsive
 */
 
+/* CSS variables for light and dark modes */
+:root {
+    --color-bg: #ffffff;
+    --color-text: #212529;
+    --color-primary: #0d6efd;
+    --color-secondary: #6c757d;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-bg: #212529;
+        --color-text: #f8f9fa;
+    }
+}
+
 /* Basic typography override */
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     line-height: 1.6;
-    color: #212529;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    transition: background-color 0.3s, color 0.3s;
 }
 
 a {
-    color: #0073aa;
+    color: var(--color-primary);
     text-decoration: none;
+    transition: color 0.2s;
 }
 
 a:hover {
+    color: var(--color-secondary);
     text-decoration: underline;
 }
 
